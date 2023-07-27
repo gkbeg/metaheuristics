@@ -8,7 +8,7 @@ from matplotlib import pyplot as plt
 def create_adj_matrix(n):
     global Adj, G
     G = nx.grid_2d_graph(n,n)
-    Adj = nx.convert_matrix.to_numpy_matrix(G)
+    Adj = nx.convert_matrix.to_numpy_array(G)
     Adj = Adj.astype(int)
     print(Adj)
 
